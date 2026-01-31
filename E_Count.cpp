@@ -6,10 +6,12 @@ int main()
     string s;
     cin>>s;
 
-    int a = s[0] -'0';
-    int b = s[1] -'0';
-    int c = s[2] -'0';
+    long long sum =0;
 
-    cout<<a+b+c;  
+    for(auto ch:s){
+        sum +=(ch-'0');
+    }
+
+    cout<<sum;  
     return 0;
 }
