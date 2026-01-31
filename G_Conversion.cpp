@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    string s;
+    cin>>s;
+
+    for(char &c:s){
+        if(c==','){
+            c=' ';
+        }
+        else if(isupper(c)){
+            c=tolower(c);
+        }
+        else if(tolower(c)){
+            c=toupper(c);
+        }
+    }
+    cout<<s;
+    return 0;
+}
